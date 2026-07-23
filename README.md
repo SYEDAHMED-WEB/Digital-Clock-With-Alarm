@@ -6,9 +6,7 @@ A modern and responsive **Digital Clock with Alarm** developed using **HTML, CSS
 
 ## 🌟 Live Demo
 
-🔗 https://syedahmed-web.github.io/Digital-Clock-With-Alarm/
-
-> *(Replace the above link with your GitHub Pages URL if different.)*
+https://syedahmed-web.github.io/Digital-Clock-With-Alarm/
 
 ---
 
@@ -86,35 +84,16 @@ This project helped in understanding:
 
 ---
 
-## ✨ Future Enhancements
-
-- Multiple Alarm Support
-- Snooze Feature
-- Alarm Labels
-- Dark / Light Theme Toggle
-- Custom Alarm Sounds
-- Volume Control
-- 12-Hour / 24-Hour Toggle
-- Save Alarm using Local Storage
-
----
-
-## 📷 Screenshot
-
-> Add a screenshot of your project here.
-
----
-
 ## 👨‍💻 Author
 
-**Syed Ahmed**
-
-GitHub: https://github.com/SYEDAHMED-WEB
+Developed by Syed Ahmed Shah Quadri as part of an internship task
 
 ---
 
 ## 📄 License
 
-This project is developed for educational and learning purposes.
+This project is open source and available under the MIT License.
 
-© 2026 Syed Ahmed. All Rights Reserved.
+---
+⭐ If you found this project useful, consider giving it a Star on GitHub!
+
