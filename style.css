@@ -1,0 +1,392 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#7c3aed);
+    position:relative;
+}
+
+/* ===========================
+   Animated Background
+=========================== */
+
+.background{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    animation:float 8s infinite ease-in-out;
+}
+
+.one{
+    width:350px;
+    height:350px;
+    background:#06b6d4;
+    top:-100px;
+    left:-100px;
+    opacity:.35;
+}
+
+.two{
+    width:320px;
+    height:320px;
+    background:#8b5cf6;
+    bottom:-100px;
+    right:-100px;
+    opacity:.35;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(25px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.container{
+
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.clock-card{
+
+width:470px;
+
+padding:40px;
+
+border-radius:28px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(25px);
+
+border:1px solid rgba(255,255,255,.20);
+
+box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+text-align:center;
+
+color:white;
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.clock-card h1{
+
+font-size:40px;
+
+font-weight:700;
+
+margin-bottom:8px;
+
+}
+
+.subtitle{
+
+color:#dbeafe;
+
+font-size:16px;
+
+margin-bottom:30px;
+
+}
+
+/* ===========================
+   Date
+=========================== */
+
+.date{
+
+font-size:18px;
+
+font-weight:500;
+
+color:#f8fafc;
+
+margin-bottom:25px;
+
+}
+
+/* ===========================
+   Digital Clock
+=========================== */
+
+.clock{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:8px;
+
+margin-bottom:10px;
+
+}
+
+.clock span{
+
+font-size:72px;
+
+font-weight:700;
+
+padding:8px 12px;
+
+color:#ffffff;
+
+text-shadow:
+
+0 0 8px #06b6d4,
+
+0 0 15px #3b82f6,
+
+0 0 30px #8b5cf6;
+
+}
+
+.colon{
+
+animation:blink 1s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:.2;
+
+}
+
+}
+
+.ampm{
+
+font-size:24px;
+
+font-weight:600;
+
+letter-spacing:3px;
+
+color:#67e8f9;
+
+margin-bottom:25px;
+
+}
+
+/* ===========================
+   Divider
+=========================== */
+
+hr{
+
+border:none;
+
+height:1px;
+
+background:rgba(255,255,255,.2);
+
+margin:25px 0;
+
+}
+
+/* ===========================
+   Alarm Heading
+=========================== */
+
+.clock-card h2{
+
+margin-bottom:25px;
+
+font-size:28px;
+
+}
+
+/* ===========================
+   Select Boxes
+=========================== */
+
+.alarm-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-bottom:25px;
+
+}
+
+select{
+
+width:120px;
+
+padding:14px;
+
+border:none;
+
+border-radius:12px;
+
+font-size:16px;
+
+background:white;
+
+cursor:pointer;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+select:hover{
+
+transform:translateY(-2px);
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button{
+
+width:100%;
+
+padding:15px;
+
+font-size:17px;
+
+font-weight:600;
+
+border:none;
+
+border-radius:14px;
+
+cursor:pointer;
+
+transition:.35s;
+
+margin-top:12px;
+
+}
+
+#setAlarm{
+
+background:linear-gradient(135deg,#10b981,#22c55e);
+
+color:white;
+
+box-shadow:0 10px 25px rgba(34,197,94,.35);
+
+}
+
+#setAlarm:hover{
+
+transform:translateY(-4px);
+
+}
+
+#stopAlarm{
+
+background:linear-gradient(135deg,#ef4444,#dc2626);
+
+color:white;
+
+display:none;
+
+box-shadow:0 10px 25px rgba(239,68,68,.35);
+
+}
+
+#stopAlarm:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* ===========================
+   Status
+=========================== */
+
+.alarmStatus{
+
+margin-top:20px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#fde68a;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:550px){
+
+.clock-card{
+
+width:95%;
+padding:25px;
+
+}
+
+.clock span{
+
+font-size:48px;
+
+}
+
+.alarm-box{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+select{
+
+width:100%;
+
+}
+
+}

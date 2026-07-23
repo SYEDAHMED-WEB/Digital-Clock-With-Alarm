@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Clock with Alarm</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background one"></div>
+<div class="background two"></div>
+
+<div class="container">
+
+    <div class="clock-card">
+
+        <h1>
+            <i class="fa-regular fa-clock"></i>
+            Digital Clock
+        </h1>
+
+        <p class="subtitle">
+            Live Digital Clock with Alarm
+        </p>
+
+        <div class="date" id="date">
+            Thursday, 25 September 2025
+        </div>
+
+        <div class="clock">
+
+            <span id="hours">00</span>
+
+            <span class="colon">:</span>
+
+            <span id="minutes">00</span>
+
+            <span class="colon">:</span>
+
+            <span id="seconds">00</span>
+
+        </div>
+
+        <div class="ampm" id="ampm">
+            AM
+        </div>
+
+        <hr>
+
+        <h2>
+
+            <i class="fa-solid fa-bell"></i>
+
+            Set Alarm
+
+        </h2>
+
+        <div class="alarm-box">
+
+            <select id="alarmHour">
+
+            </select>
+
+            <select id="alarmMinute">
+
+            </select>
+
+            <select id="alarmPeriod">
+
+                <option>AM</option>
+                <option>PM</option>
+
+            </select>
+
+        </div>
+
+        <button id="setAlarm">
+
+            <i class="fa-solid fa-check"></i>
+
+            Set Alarm
+
+        </button>
+
+        <button id="stopAlarm">
+
+            <i class="fa-solid fa-stop"></i>
+
+            Stop Alarm
+
+        </button>
+
+        <div class="alarmStatus" id="alarmStatus">
+
+            No Alarm Set
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
